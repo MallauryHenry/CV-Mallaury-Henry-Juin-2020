@@ -1,0 +1,151 @@
+/*STYLES GENERAUX*/
+*{
+	font-family: Avenir, sans-serif;
+	padding: 0px;
+	margin: 0px;
+	text-align: justify;
+	box-sizing: border-box;
+}
+body{
+	background: #ededed;
+}
+p{
+	font-size: 1em
+	line-height: 1.5em;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*HEADER & FOOTER*/
+header, footer{
+	width: 100%;
+	padding: 20px 0px;
+}
+header{
+	border-bottom: 2px solid #fff;
+	height:120px;
+}
+header h1{
+	color: white;
+	font-size: 1.5em
+	width: 90%;
+	margin: 0 auto;
+}
+footer{
+	border-top: 2px solid #fff;
+}
+footer p{
+	width: 90%;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+footer a{
+	color: #fff;
+}
+
+/*SECTIONS*/
+section{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%
+	padding-bottom: 20px;
+	margin: 20px auto;
+	box-shadow: 0px 0px 10px #bbb;
+	background-color: #fff;
+}
+
+section h2{
+	margin: 20px 0;
+	width: 90%;
+}
+section > div{
+	width: 90%;
+}
+
+.photo{
+	text-align: center;
+}
+.photo img{
+	width: 150px;
+	height: 150px;
+	border:3px solid #fff;
+	box-shadow: 0px 0px 10px #777;
+	border-radius: 50%;
+	margin-top: -80%;
+}
+
+.A_propos{
+	border-bottom: 2px dashed #ccc;
+}
+
+.Formation{
+	display: flex;
+	flex-flow: row wrap;
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.Formation-info{
+	display: flex;
+	flex-flow: column wrap;
+	flex: 0 0 70%;
+	margin-left: auto;
+}
+.Formation h3{
+	font-size: 1.2em;
+}
+.Formation h4{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.Experience{
+	display: flex;
+	flex-flow: row wrap;
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.Experience-info{
+	display: flex;
+	flex-flow: column wrap;
+	flex: 0 0 70%;
+	margin-left: auto;
+}
+.Experience h3{
+	font-size: 1.2em;
+}
+.Experience h4{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.contact-info{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+.contact-inf p: first-child{
+	flex: 0 0 40%;
+}
+.contact-info p: last-child{
+	flex: 0 0 60%;
+}
+
+.recommandations{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
