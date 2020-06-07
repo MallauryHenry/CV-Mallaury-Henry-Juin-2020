@@ -1,59 +1,65 @@
-/*STYLES GENERAUX*/
-*{
-	font-family: Avenir, sans-serif;
-	padding: 0px;
-	margin: 0px;
-	text-align: justify;
-	box-sizing: border-box;
-}
-body{
-	background: #FFFFFF;
-}
-p{
-	font-size: 1.2em;
-	line-height: 150%;
+/*Général*/
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('DroidSans-webfont.eot');
+    src: url('DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSans-webfont.woff2') format('woff2'),
+         url('DroidSans-webfont.woff') format('woff'),
+         url('DroidSans-webfont.ttf') format('truetype'),
+         url('DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-/*HEADER & FOOTER*/
-header, footer{
-	width: 100%;
-	padding: 20px 20px;
+body{
+	background-color: white;
+	font-family: 'droid_sansregular', Arial, sans-serif;
 }
+
 header{
-	border-bottom: solid #FFFFFF;
-	height:120px;
+	display: flex;
+	justify-content: space-between;
 }
-header h1{
-	color: black;
-	font-size: 1.2em;
-	width: 100%;
+
+#bloc_presentation{
+	display: flex;
+	flex-flow: row  wrap;
+	justify-content: flex-end;
+	width: 70%;
 	margin: auto;
 }
-.NT{
-	float: center;
+@media all and (max-width: 1024px){
+	#bloc_presentation{
+		width: auto;
+	}
+
+}
+#prenomtitre h1 h2{
+	text-align: left;
 }
 
-/*SECTIONS*/
-section{
+#contenu{
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	width: 100%
-	padding-bottom: 20px;
-	margin: 20px;
-	box-shadow: 0px 0px 10px #bbb;
-	background-color: #fff;
+	flex-flow: column wrap;
+	justify-content: flex-end;	
+	width: 70%;
 }
 
-section h2{
-	margin: 20px 0;
-	width: 90%;
+#date_lieu{
+	text-align: left;
 }
 
+#desc{
+	text-align: right;
+}
 
-
-
-
+aside{
+	display: flex;
+	background-color: #FDD835;
+	width: 40%;
+	position: relative;
+}
 
 
 
