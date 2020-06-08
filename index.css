@@ -17,6 +17,8 @@ body{
 	font-family: 'droid_sansregular', Arial, sans-serif;
 }
 
+/* Header */
+
 header{
 	display: flex;
 	justify-content: space-between;
@@ -24,7 +26,7 @@ header{
 
 #bloc_presentation{
 	display: flex;
-	flex-flow: row  wrap;
+	flex-flow: row wrap;
 	justify-content: flex-end;
 	width: 70%;
 	margin: auto;
@@ -33,11 +35,14 @@ header{
 	#bloc_presentation{
 		width: auto;
 	}
+}
 
 }
 #prenomtitre h1 h2{
 	text-align: left;
 }
+
+/* Contenu */
 
 #contenu{
 	display: flex;
@@ -55,11 +60,48 @@ header{
 }
 
 aside{
-	display: flex;
-	background-color: #FDD835;
-	width: 40%;
-	position: relative;
+    flex: 1;
+    background-color: #FDD835;
+    padding: 0px;
+    color: white;
+    font-size: 0.9em;
+    color: #424242;
 }
 
+#photo
+{
+	width: 150px;
+	height: 150px;
+	border:3px solid #fff;
+	box-shadow: 0px 0px 10px #777;
+	border-radius: 50%;
+	margin-top: -80%;
+}
 
+#contact h2{
+	border: 3px #424242 solid;
+	background-color: #424242;
+	color: #FDD835;
+	text-align: center;
+}
 
+#a_propos h2{
+	border: 3px #424242 solid;
+	background-color: #424242;
+	color: #FDD835;
+	text-align: center;
+}
+
+#interet h2{
+	border: 3px #424242 solid;
+	background-color: #424242;
+	color: #FDD835;
+	text-align: center;
+}
+
+/*Footer*/
+footer{
+	display: flex;
+	position: static;
+	flex: 1;
+}
