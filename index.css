@@ -1,4 +1,12 @@
 /*Général*/
+
+div, header, footer, section {
+	border: 1px solid black;
+}
+
+aside {
+	border: 1px solid pink;
+}
 @font-face {
     font-family: 'droid_sansregular';
     src: url('DroidSans-webfont.eot');
@@ -15,6 +23,14 @@
 body{
 	background-color: white;
 	font-family: 'droid_sansregular', Arial, sans-serif;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#bloc_presentation {
+	display: flex;
+	flex-direction: column;
+	justify-content: 
 }
 
 /* Header */
@@ -31,11 +47,7 @@ header{
 	width: 70%;
 	margin: auto;
 }
-@media all and (max-width: 1024px){
-	#bloc_presentation{
-		width: auto;
-	}
-}
+
 
 }
 #prenomtitre h1 h2{
@@ -104,4 +116,10 @@ footer{
 	display: flex;
 	position: static;
 	flex: 1;
+}
+
+@media all and (max-width: 1024px){
+	#bloc_presentation{
+		width: auto;
+	}
 }
