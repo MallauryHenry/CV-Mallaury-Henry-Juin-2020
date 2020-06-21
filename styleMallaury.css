@@ -19,9 +19,9 @@ body{
 .bloc-gauche{
 	background-color: #FBC02D;
 	width: 25%;
-	
-	
+	height: 100%;
 }
+
 
 img{
 	border-radius: 50%;
@@ -119,6 +119,7 @@ img{
 .form_droit{
 	width: 70%;
 	padding-left: 10%;
+	font-weight: lighter;
 }
 
 .nom_ecole{
