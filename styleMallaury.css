@@ -8,6 +8,25 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 1380px) {
+	.bloc_gauche_text{
+		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 414px){
+	.bloc-gauche{
+		display: flex;
+		flex-direction: column;
+	}
+	.bloc-droite{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+
 /*BODY*/
 body{
 	background-color: white;
@@ -19,7 +38,6 @@ body{
 .bloc-gauche{
 	background-color: #FBC02D;
 	width: 25%;
-	height: 100%;
 }
 
 
@@ -31,14 +49,22 @@ img{
 .photo{
 	padding-left: 20%; 
 	padding-right: 20%;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
+.bloc_loisirs{
+	padding-top: 350%;
+	padding-bottom: 10%;
+
+}
 
 .bold{
 	text-transform: uppercase;
 	font-size: 22px;
 	font-weight: bold;
 }
+
 
 .bloc_gauche_titre{
 	color: #FBC02D;
@@ -50,7 +76,6 @@ img{
 .bloc_gauche_text{
 	padding-left: 15%;
 	padding-right: 3%;
-	min-height: 100vh;
 }
 
 .bloc_icon{
@@ -71,6 +96,8 @@ img{
 	font-size: 14px;
 	line-height: 22px;
 }
+
+
 
 .prez{
 	padding: 10% 10% 10% 1%;
