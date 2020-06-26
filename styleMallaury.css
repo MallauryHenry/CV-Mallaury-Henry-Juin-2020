@@ -8,30 +8,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 1380px) {
-	.bloc_gauche_text{
-		height: 100vh;
-	}
-}
-
-@media screen and (max-width: 414px){
-	.bloc-gauche{
-		display: flex;
-		flex-direction: column;
-	}
-	.bloc-droite{
-		display: flex;
-		flex-direction: column;
-	}
-
-}
-
 
 /*BODY*/
 body{
 	background-color: white;
 	color: black;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 22px;
 }
 
@@ -54,14 +36,14 @@ img{
 }
 
 .bloc_loisirs{
-	padding-top: 350%;
-	padding-bottom: 10%;
+	padding-top: 415%;
+	padding-bottom: 15%;
 
 }
 
 .bold{
 	text-transform: uppercase;
-	font-size: 22px;
+	font-size: 1.3em;
 	font-weight: bold;
 }
 
@@ -84,6 +66,15 @@ img{
 	padding-left: 25%;
 	padding-right: 25%;
 }
+.fas.fa-plane{
+	font-size: 24px;
+}
+.fas.fa-palette{
+	font-size: 24px;
+}
+.fas.fa-dumbbell{
+	font-size: 24px;
+}
 
 
 .bloc-droit{
@@ -93,10 +84,11 @@ img{
 	right: 20px;
 	background-color: white;
 	color : black;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 22px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
-
 
 
 .prez{
@@ -104,20 +96,20 @@ img{
 }
 
 .nom{
-	font-size: 50px;
+	font-size: 3.1em;
 }
 .titre{
-	font-size: 25px;
+	font-size: 1.5em;
 }
 
-.bloc_formation{
+.bloc_formation_exp{
 	padding: 10px 10px 10px 2px;
 }
 
 .formation{
 	display: flex;
 	flex-flow: column wrap;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-weight: bold;
 	padding-bottom: 10px;
 }
@@ -151,7 +143,7 @@ img{
 
 .nom_ecole{
 	text-transform: uppercase;
-	font-size: 22px;
+	font-size: 1.3em;
 	font-weight: 400;
 }	
 
@@ -164,19 +156,163 @@ img{
 .experience{
 	display: flex;
 	flex-flow: column wrap;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-weight: bold;
 	padding-bottom: 10px;
 }
 
-.reco_titre{
+.reco{
 	display: flex;
 	flex-flow: column wrap;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-weight: bold;
 	padding-bottom: 10px;
 }
 
 
+/*RESPONSIVE - MEDIA QUERIES*/
 
+/*4K - 2560px*/
+@media screen and (min-width: 2560px) and (max-width: 2560px){
+	body{
+	font-size: 2em;
+	line-height: 1.6;
+	}
+	.bold{
+	font-size: 1.5em;
+	}
+	.bloc-droit{
+	font-size: 1em;
+	line-height: 1.6;
+	}
+	.bloc-gauche{
+	width: 25%; 
+	}
+	.bloc_contact{
+	padding-top: 20%; 
+	}
+	.bloc_gauche_text{
+	text-align: justify;
+	padding-right: 10%;
+	}
+	.photo{
+	padding-top: 20%;
+	padding-left: 23%; 
+	}
+	img{
+	padding-top: 15%;
+	width: 100%;
+	}
+	.bloc_loisirs{
+	padding-top: 540%;
+	}
+	.bloc_icon{
+	padding-top: 5%;
+	}
+	.fas.fa-plane{
+	font-size: 40px;
+	}
+	.fas.fa-palette{
+	font-size: 40px;
+	}
+	.fas.fa-dumbbell{
+	font-size: 40px;
+	}
+}
+
+/*Laptop - 1440px*/
+@media screen and (max-width: 1440px){
+	.photo{
+	padding-left: 25%; 
+	}
+	.bloc_loisirs{
+	padding-top: 410%;
+	}
+}
+
+/*Laptop - 1024px*/
+@media screen and (max-width: 1024px){
+	body{
+	font-size: 0.8em;
+	}
+	.bloc-gauche{
+	width: 30%; 
+	}
+	.photo{
+	padding-left: 16%; 
+	}
+	.bloc_loisirs{
+	padding-top: 520%;
+	}
+}
+
+
+/*Tablette - 768px*/
+@media screen and (max-width: 768px){
+	body{
+	font-size: 0.8em;
+	line-height: 1.6;
+	}
+	.bloc-gauche{
+	width: 30%; 
+	}
+	.bloc_gauche_text{
+	text-align: justify;
+	padding-right: 10%;
+	}
+	img{
+	padding-top: 15%;
+	width: 100%;
+	}
+	.bloc_gauche_text{
+	height: 90vh;
+	}
+	.bloc_loisirs{
+	padding-top: 570%;
+	}
+}
+
+
+/*Mobile - 425px*/
+@media screen and (max-width: 425px){
+	.bloc{
+	display: flex;
+	flex-direction: column-reverse;
+	}
+	.bloc-gauche{
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	}
+	.bloc-droit{
+	position: relative;
+	top: 0%;
+	left: 0%;
+	right: 0px;
+	width: 100%;
+	}
+	.nom{
+	font-size: 2.5em;
+	}
+	.bloc_loisirs{
+	padding-top: 0%;
+	padding-bottom: 5%;
+	}
+	.bloc_gauche_text{
+	height: 0%;
+	padding-bottom: 5%;
+	}
+	.photo{
+	width: 80%;
+	padding-top: 0%;
+	padding-left: 30%;
+	}
+}
+
+/*Mobile M - 375px*/
+@media screen and (max-width: 375px){
+	.nom{
+	font-size: 2em;
+	}
+}
 
