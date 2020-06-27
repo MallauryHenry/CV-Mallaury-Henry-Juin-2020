@@ -22,7 +22,6 @@ body{
 	width: 25%;
 }
 
-
 img{
 	border-radius: 50%;
 	padding-top: 10%;	
@@ -35,8 +34,16 @@ img{
 	padding-bottom: 10%;
 }
 
+h2{
+	font-size: 1.5em;
+}
+
+.titre_h2{
+	padding-bottom: 3%;
+}
+
 .bloc_loisirs{
-	padding-top: 415%;
+	padding-top: 400%;
 	padding-bottom: 15%;
 
 }
@@ -52,12 +59,18 @@ img{
 	color: #FBC02D;
 	text-align: center;
 	border-style: solid;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	background-color: #212121;
 }
 
 .bloc_gauche_text{
 	padding-left: 15%;
 	padding-right: 3%;
+}
+
+li{
+	padding-bottom: 8%;
 }
 
 .bloc_icon{
@@ -106,13 +119,6 @@ img{
 	padding: 10px 10px 10px 2px;
 }
 
-.formation{
-	display: flex;
-	flex-flow: column wrap;
-	font-size: 1.2em;
-	font-weight: bold;
-	padding-bottom: 10px;
-}
 
 .ligne{
 	width: 100%;
@@ -153,21 +159,6 @@ img{
 	align-items: center;
 }
 
-.experience{
-	display: flex;
-	flex-flow: column wrap;
-	font-size: 1.2em;
-	font-weight: bold;
-	padding-bottom: 10px;
-}
-
-.reco{
-	display: flex;
-	flex-flow: column wrap;
-	font-size: 1.2em;
-	font-weight: bold;
-	padding-bottom: 10px;
-}
 
 
 /*RESPONSIVE - MEDIA QUERIES*/
@@ -177,6 +168,9 @@ img{
 	body{
 	font-size: 2em;
 	line-height: 1.6;
+	}
+	.titre_h2{
+	padding-bottom: 2%;
 	}
 	.bold{
 	font-size: 1.5em;
