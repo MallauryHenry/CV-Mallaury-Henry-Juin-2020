@@ -38,14 +38,14 @@ h2{
 	font-size: 1.5em;
 }
 
-.titre_h2{
-	padding-bottom: 3%;
-}
-
 .bloc_loisirs{
-	padding-top: 400%;
+	padding-top: 530%;
 	padding-bottom: 15%;
 
+}
+
+.bloc_apropos{
+	padding-bottom: 20%;
 }
 
 .bold{
@@ -65,6 +65,7 @@ h2{
 }
 
 .bloc_gauche_text{
+	padding-top: 8%;
 	padding-left: 15%;
 	padding-right: 3%;
 }
@@ -76,6 +77,7 @@ li{
 .bloc_icon{
 	display: flex;
 	justify-content: space-between;
+	padding-top: 10%;
 	padding-left: 25%;
 	padding-right: 25%;
 }
@@ -103,6 +105,15 @@ li{
 	padding-right: 5%;
 }
 
+h1{
+	font-size: 1em;
+	font-weight: lighter;
+	padding-bottom: 3%;
+}
+
+h1 span{
+	color: #FBC02D
+}
 
 .prez{
 	padding: 10% 10% 10% 1%;
@@ -111,14 +122,44 @@ li{
 .nom{
 	font-size: 3.1em;
 }
-.titre{
-	font-size: 1.5em;
+.titre h2{
+	font-weight: normal;
+	padding-bottom: 3%;
+}
+
+.titre h2 span{
+	text-decoration: underline;
+	text-decoration-color: #FBC02D;
+	font-weight: normal;
+}
+
+.titre_h2 h2{
+	font-weight: 500;
 }
 
 .bloc_formation_exp{
 	padding: 10px 10px 10px 2px;
 }
 
+.fas.fa-graduation-cap{
+	color: #FBC02D; 
+}
+
+.far.fa-dot-circle{
+	color: #FBC02D;
+}
+
+.fas.fa-circle{
+	color: #FBC02D;
+}
+
+.fas.fa-briefcase{
+	color: #FBC02D;
+}
+
+.fas.fa-pen-fancy{
+	color: #FBC02D;
+}
 
 .ligne{
 	width: 100%;
@@ -133,6 +174,8 @@ li{
 	align-items: flex-start;
 	width: 100%;
 	height: auto;
+	padding-bottom: 3%;
+	padding-top: 3%;
 }
 
 
@@ -151,14 +194,19 @@ li{
 	text-transform: uppercase;
 	font-size: 1.3em;
 	font-weight: 400;
+	padding-bottom: 3%;
 }	
 
 .text_form{
 	text-align: justify;
 	text-justify: inter-word;
 	align-items: center;
+	padding-top: 3%;
 }
 
+h3{
+	font-weight: normal;
+}
 
 
 /*RESPONSIVE - MEDIA QUERIES*/
@@ -236,7 +284,7 @@ li{
 	padding-left: 16%; 
 	}
 	.bloc_loisirs{
-	padding-top: 520%;
+	padding-top: 450%;
 	}
 }
 
@@ -262,7 +310,7 @@ li{
 	height: 90vh;
 	}
 	.bloc_loisirs{
-	padding-top: 570%;
+	padding-top: 450%;
 	}
 }
 
@@ -287,6 +335,10 @@ li{
 	}
 	.nom{
 	font-size: 2.5em;
+	}
+	.bloc_apropos{
+		padding-top: 0%;
+		padding-bottom: 0%;
 	}
 	.bloc_loisirs{
 	padding-top: 0%;
